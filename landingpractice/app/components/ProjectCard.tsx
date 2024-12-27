@@ -1,13 +1,14 @@
 import Button from "./Button";
 import { NextPage } from "next";
-interface BlogPostCardProps {
+
+interface ProjectCardProps {
   Coverpic: string;
+  AltTitle: string;
   Title: string;
-  Description: string;
   onClick?: () => void;
 }
 
-const BlogPostCard: NextPage<BlogPostCardProps> = ({ Coverpic, Title, Description, onClick }) => {
+const ProjectCard: NextPage<ProjectCardProps> = ({ Coverpic, AltTitle, Title, onClick }) => {
   const truncate = (text: string, limit: number) => {
     return text.length > limit ? text.substring(0, limit) + "..." : text;
   };
@@ -16,10 +17,10 @@ const BlogPostCard: NextPage<BlogPostCardProps> = ({ Coverpic, Title, Descriptio
       onClick={onClick}
       className="cursor-pointer rounded-lg shadow-maingreen shadow-md border-2 border-maingreen border-opacity-20 hover:scale-105 transition-all">
       <img src={Coverpic} alt="developer" width={400} />
-      <h1 className="font-Poppins font-black text-xl p-0.5 text-center text-mainwhite mt-5 mb-2">
-        {truncate(Title, 40)}
+      <h1 className="font-Inter font-normal text-lg p-0.5 text-center text-maingreen mt-5 mb-2">
+        <span className="text-maingraytext">Task:</span> {AltTitle}
       </h1>
-      <p className="font-Inter font-light text-lg text-maingraytext text-center">{truncate(Description, 100)}</p>
+      <p className="font-Poppins font-black text-2xl text-mainwhite text-center">{truncate(Title, 100)}</p>
       <div className="flex justify-center mt-5 mb-5">
         <Button title1={"Read more!"} title2={"Worth it!"} />
       </div>
@@ -27,4 +28,4 @@ const BlogPostCard: NextPage<BlogPostCardProps> = ({ Coverpic, Title, Descriptio
   );
 };
 
-export default BlogPostCard;
+export default ProjectCard;

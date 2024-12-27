@@ -4,6 +4,9 @@ import Button from "./components/Button";
 import Blogpost01 from "./Blogposts/Blogpost01";
 import Blogpost02 from "./Blogposts/Blogpost02";
 import Blogpost03 from "./Blogposts/Blogpost03";
+import Project01 from "./Projects/Project01";
+import Project02 from "./Projects/Project02";
+import Project03 from "./Projects/Project03";
 
 export default function Home() {
   return (
@@ -201,11 +204,16 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-mainblack via-transparent to-transparent opacity-30 backdrop-blur-md z-0"></div>
       </section>
 
-      <section className="w-full mt-10">
+      <section id="projects" className="w-full mt-10">
         <h3 className="font-Inter font-semibold text-maingreen text-lg text-center">
           Visit my projects and keep your feedback
         </h3>
         <h1 className="font-Poppins font-black text-4xl text-center mb-[4rem] text-mainwhite">My Portfolio</h1>
+        <div className="w-4/6 grid lg:grid-cols-3 sm:grid-cols-1 mx-auto gap-7">
+          <Project01 />
+          <Project02 />
+          <Project03 />
+        </div>
       </section>
     </>
   );

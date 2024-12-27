@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import FullScreenModal from "../components/FullScreenModal";
 import BlogPostCard from "../components/BlogPostCard";
+import Button from "../components/Button";
 
 const Blogpost01 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,7 +27,7 @@ const Blogpost01 = () => {
 
         {/* Fullscreen Modal */}
         <FullScreenModal isOpen={isModalOpen} onClose={closeModal}>
-          <section className="w-full p-5">
+          <section className="w-full p-10">
             <div className="w-full h-[15rem]">
               <img src="./blogpost1pic.png" alt="webdevelop" className="w-full rounded-xl" />
               <div>
@@ -81,6 +82,9 @@ const Blogpost01 = () => {
                 alteration in some form, by injectedeed eedhumour, or randomised words which don’t look even slightly
                 believable.
               </p>
+              <div className="flex justify-center mt-5 pb-10">
+                <Button title1={"Close"} title2={"Close"} onClick={closeModal} />
+              </div>
             </div>
           </section>
         </FullScreenModal>
