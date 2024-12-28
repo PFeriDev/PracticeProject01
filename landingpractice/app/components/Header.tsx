@@ -39,19 +39,15 @@ const Header = () => {
               <Link href="#projects">Projects</Link>
             </li>
             <li className="hover:text-mainwhite transition-all">
-              <Link href="#Contact">Contact</Link>
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
         </div>
 
         <div>
-          <Button
-            title1="Hire me!"
-            title2="Work together!"
-            onClick={() => {
-              document.getElementById("Contact")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          />
+          <Link href={"#contact"}>
+            <Button title1="Hire me!" title2="Work together!" />
+          </Link>
         </div>
         <div className="lg:hidden text-mainwhite ml-3">
           <DropdownMenu>
@@ -74,7 +70,7 @@ const Header = () => {
                     <Link href="#projects">Projects</Link>
                   </li>
                   <li className="hover:text-mainwhite transition-all">
-                    <Link href="#Contact">Contact</Link>
+                    <Link href="#contact">Contact</Link>
                   </li>
                 </ul>
               </DropdownMenuItem>

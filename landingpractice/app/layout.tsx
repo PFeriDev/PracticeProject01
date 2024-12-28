@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "PemmerWebDev Practice Project01",
@@ -13,6 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="hu">
+      <Head>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <body className="bg-mainblack text-maingray">{children}</body>
     </html>
   );

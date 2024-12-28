@@ -84,7 +84,14 @@ const Project03 = () => {
                   </li>
                 </ul>
                 <div className="mt-10 lg:block flex justify-center">
-                  <Button title1={"Project in Live"} title2={"Project in Live"} />
+                  <Button
+                    title1={"Project in Live"}
+                    title2={"Project in Live"}
+                    onClick={() => {
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                      closeModal();
+                    }}
+                  />
                 </div>
               </div>
             </div>
