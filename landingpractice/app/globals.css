@@ -104,3 +104,7 @@ section {
   -ms-overflow-style: none; /* IE és Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.contactforminputs {
+  @apply mb-2 w-full bg-transparent border-b-2 border-maingraytext rounded-md p-3 focus:border-2 focus:border-opacity-30 focus:border-maingreen focus:outline-none transition-all duration-100;
+}

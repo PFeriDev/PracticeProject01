@@ -7,6 +7,9 @@ import Blogpost03 from "./Blogposts/Blogpost03";
 import Project01 from "./Projects/Project01";
 import Project02 from "./Projects/Project02";
 import Project03 from "./Projects/Project03";
+import ContactForm from "./components/ContactForm";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -215,6 +218,21 @@ export default function Home() {
           <Project03 />
         </div>
       </section>
+      <section className="w-full mt-10">
+        <div>
+          <h1 className="font-Poppins font-black text-4xl text-center text-mainwhite">FAQ</h1>
+        </div>
+        <div className="lg:w-3/6 mx-auto shadow-lg shadow-maingreen/30 p-5 rounded-xl border-2 border-maingreen/30 mt-5">
+          <Faq />
+        </div>
+      </section>
+
+      <section id="Contact" className="w-full mt-10">
+        <h3 className="font-Inter font-semibold text-maingreen text-lg text-center">Start your journey with me!</h3>
+        <h1 className="font-Poppins font-black text-4xl text-center text-mainwhite">Lets's Connect!</h1>
+        <ContactForm />
+      </section>
+      <Footer />
     </>
   );
 }

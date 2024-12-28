@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import logo from "../assets/logo.png";
 import Link from "next/link";
@@ -37,13 +39,19 @@ const Header = () => {
               <Link href="#projects">Projects</Link>
             </li>
             <li className="hover:text-mainwhite transition-all">
-              <Link href="#">Contact</Link>
+              <Link href="#Contact">Contact</Link>
             </li>
           </ul>
         </div>
 
         <div>
-          <Button title1="Hire me!" title2="Work together!" />
+          <Button
+            title1="Hire me!"
+            title2="Work together!"
+            onClick={() => {
+              document.getElementById("Contact")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          />
         </div>
         <div className="lg:hidden text-mainwhite ml-3">
           <DropdownMenu>
@@ -66,7 +74,7 @@ const Header = () => {
                     <Link href="#projects">Projects</Link>
                   </li>
                   <li className="hover:text-mainwhite transition-all">
-                    <Link href="#">Contact</Link>
+                    <Link href="#Contact">Contact</Link>
                   </li>
                 </ul>
               </DropdownMenuItem>

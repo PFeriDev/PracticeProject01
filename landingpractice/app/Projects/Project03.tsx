@@ -36,7 +36,7 @@ const Project03 = () => {
                       delay: 5000,
                     }),
                   ]}
-                  className="lg:ml-5 shadow-lg border-2 border-maingreen rounded-xl border-opacity-15 shadow-maingreen">
+                  className="lg:ml-5 shadow-xl border-2 border-maingreen rounded-xl border-opacity-15 shadow-maingreen/30">
                   <CarouselContent className="flex">
                     <CarouselItem className="w-full flex justify-center items-center">
                       <img
