@@ -8,7 +8,7 @@ const Responsive = () => {
           </h1>
         </div>
         <div className="lg:w-1/2 flex justify-start mx-auto">
-          <img src="./phone2.png" alt="" width={320} className="transition-all lg:hover:scale-105" />
+          <img src="./phone.png" alt="" width={320} className="transition-all lg:hover:scale-105" />
         </div>
       </div>
     </section>

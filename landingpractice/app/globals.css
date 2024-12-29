@@ -108,3 +108,7 @@ section {
 .contactforminputs {
   @apply mb-2 w-full bg-transparent border-b-2 border-maingraytext rounded-md p-3 focus:border-2 focus:border-opacity-30 focus:border-maingreen focus:outline-none transition-all duration-100;
 }
+
+.textshadow {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}

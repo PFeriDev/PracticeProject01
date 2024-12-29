@@ -41,13 +41,13 @@ const ContactSection: React.FC = () => {
             <li>
               <a className="flex mt-3 gap-3 font-Inter font-normal" href="tel:+36209603842">
                 <Smartphone className="hover:text-maingreen transition-all duration-300" />
-                <b>Mobil:</b> +36 20 960 3842
+                <b>Mobil:</b> +36 30 953 6484
               </a>
             </li>
             <li>
               <a className="flex mt-3 gap-3 font-Inter font-normal" href="mailto:tamas.pemmer@gmail.com">
                 <MailCheck className="hover:text-maingreen transition-all duration-300" />
-                <b>Email: </b>tamas.pemmer@gmail.com
+                <b>Email: </b>pemmer.ferenc@gmail.com
               </a>
             </li>
           </ul>
