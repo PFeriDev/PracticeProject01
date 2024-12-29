@@ -3,6 +3,7 @@ import { CircleUser, Gift, Mail, MapPinCheckInside, Facebook, Instagram, Twitter
 import React from "react";
 import Button from "../Button";
 import Link from "next/link";
+import Image from "next/image";
 
 const about = () => {
   return (
@@ -12,12 +13,12 @@ const about = () => {
         <h1 className="font-Poppins font-black text-4xl text-center mb-[4rem]">About Me</h1>
         <div className="mt-10 grid lg:grid-cols-2 lg:w-4/6 mx-auto my-auto gap-8">
           <div className="lg:flex lg:justify-end items-center">
-            <img src="./aboutpic.png" alt="webdev" width={300} className="mx-10" />
+            <Image src="/aboutpic.png" alt="webdev" width={300} height={300} className="mx-10"></Image>
           </div>
           <div className="p-5  overflow-hidden">
             <p className="font-Inter font-semibold text-maingreen text-lg">Who am i?</p>
             <h2 className="font-Poppins font-black text-2xl mt-1 mb-4">
-              I'm Ferenc Pemmer, a full stack Web Developer
+              I am Ferenc Pemmer, a full stack Web Developer
             </h2>
             <p className="font-Inter font-semibold text-maingraytext text-base">
               My goal is to contribute to the development of creative and modern web solutions as a full-stack developer

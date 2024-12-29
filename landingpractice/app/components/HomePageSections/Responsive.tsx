@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Responsive = () => {
   return (
     <section className="w-full h-screen flex justify-center mb-[8rem]">
@@ -8,7 +10,12 @@ const Responsive = () => {
           </h1>
         </div>
         <div className="lg:w-1/2 flex justify-start mx-auto">
-          <img src="./phone.png" alt="" width={320} className="transition-all lg:hover:scale-105" />
+          <Image
+            src="/phone.png"
+            alt="phone"
+            width={320}
+            height={320}
+            className="transition-all lg:hover:scale-105"></Image>
         </div>
       </div>
     </section>

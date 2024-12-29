@@ -48,8 +48,8 @@ const ContactSection: React.FC = () => {
             Have a question? <br /> Feel free to ask!
           </h3>
           <p className="font-Inter font-normal text-sm text-maingraytext mb-5">
-            Don't hesitate to reach out! Whether you're curious about my work, services, or anything else, I'm here to
-            assist. Let's connect and discuss how I can assist you with your project needs.
+            Dont hesitate to reach out! Whether youre curious about my work, services, or anything else, Im here to
+            assist. Lets connect and discuss how I can assist you with your project needs.
           </p>
           <ul>
             <li>

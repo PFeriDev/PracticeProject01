@@ -1,12 +1,9 @@
-import { NextPage } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-interface Props {}
-
-const Faq: NextPage<Props> = ({}) => {
+const Faq = () => {
   return (
     <section className="w-full mt-[4rem]">
-      <h3 className="font-Inter font-semibold text-maingreen text-lg text-center">Got Questions? I've Got Answers!</h3>
+      <h3 className="font-Inter font-semibold text-maingreen text-lg text-center">Got Questions? Ive Got Answers!</h3>
       <h1 className="font-Poppins font-black text-4xl text-center mb-[4rem] text-mainwhite">FAQ</h1>
       <div className="lg:w-3/5 mx-auto p-5">
         <Accordion type="single" collapsible>
@@ -29,8 +26,8 @@ const Faq: NextPage<Props> = ({}) => {
               How long does it take to build a website?
             </AccordionTrigger>
             <AccordionContent className="font-Inter font-normal text-maingraytext text-lg">
-              The timeline depends on the complexity of the project. Typically, a simple website can take 2–4 weeks,
-              while more complex websites may take 1–3 months.
+              The timeline depends on the complexity of the project. Typically, a simple website can take 2-4 weeks,
+              while more complex websites may take 1-3 months.
             </AccordionContent>
           </AccordionItem>
 
@@ -41,8 +38,8 @@ const Faq: NextPage<Props> = ({}) => {
               What is the process of designing a website?
             </AccordionTrigger>
             <AccordionContent className="font-Inter font-normal text-maingraytext text-lg">
-              The process includes initial consultations, designing wireframes, developing the site’s structure,
-              creating visuals, coding, testing, and finally launching the site.
+              The process includes initial consultations, designing wireframes, developing the sites structure, creating
+              visuals, coding, testing, and finally launching the site.
             </AccordionContent>
           </AccordionItem>
 
@@ -65,8 +62,8 @@ const Faq: NextPage<Props> = ({}) => {
               What information do I need to prepare to get started?
             </AccordionTrigger>
             <AccordionContent className="font-Inter font-normal text-maingraytext text-lg">
-              To get started, you’ll need to provide information about your business or personal goals, preferred design
-              styles, content (such as text and images), and any specific features you need.
+              To get started, you will need to provide information about your business or personal goals, preferred
+              design styles, content (such as text and images), and any specific features you need.
             </AccordionContent>
           </AccordionItem>
 

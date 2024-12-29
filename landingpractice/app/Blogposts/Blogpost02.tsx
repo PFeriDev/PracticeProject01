@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import FullScreenModal from "../components/FullScreenModal";
 import BlogPostCard from "../components/BlogPostCard";
 import Button from "../components/Button";
+import Image from "next/image";
 
 const Blogpost01 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +30,12 @@ const Blogpost01 = () => {
         <FullScreenModal isOpen={isModalOpen} onClose={closeModal}>
           <section className="w-full p-10">
             <div className="w-full h-[15rem]">
-              <img src="./blogpost1pic.png" alt="webdevelop" className="w-full rounded-xl" />
+              <Image
+                src="/blogpost1pic.png"
+                alt="webdevelop"
+                className="w-full rounded-xl"
+                width={500}
+                height={500}></Image>
               <div>
                 <p className="font-Inter font-normal text-md text-maingraytext mt-2 mb-2">August 17, 2022</p>
                 <h1 className="font-Poppins font-extrabold text-4xl text-mainwhite mb-5">
@@ -43,12 +49,12 @@ const Blogpost01 = () => {
                   web developer should be familiar with in 2024:
                 </p>
               </div>
-
-              <img
+              <Image
                 src="https://media.istockphoto.com/id/1335050732/hu/fot%C3%B3/%C3%BCzletember-seg%C3%ADts%C3%A9g%C3%A9vel-a-sz%C3%A1m%C3%ADt%C3%B3g%C3%A9p-dokumentumkezel%C3%A9si-koncepci%C3%B3-online-dokument%C3%A1ci%C3%B3s.jpg?s=1024x1024&w=is&k=20&c=JhYIPmMCt4GH-kl7wsLv2n6lm_zk3P8LD53itdXaB2o="
                 alt="webdeveloper"
-                className="rounded-xl"
-              />
+                className="rounded-xl mx-auto"
+                width={1000}
+                height={1000}></Image>
               <p></p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">
                 1. Visual Studio Code (VS Code)
@@ -56,7 +62,7 @@ const Blogpost01 = () => {
               <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
                 Visual Studio Code remains one of the most popular and versatile code editors for developers. Its
                 lightweight nature, combined with powerful features like IntelliSense, Git integration, and a vast
-                library of extensions, makes it a must-have tool. Whether you're writing HTML, CSS, JavaScript, or any
+                library of extensions, makes it a must-have tool. Whether youre writing HTML, CSS, JavaScript, or any
                 other programming language, VS Code helps you stay efficient and productive.
               </p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">2. Git & GitHub</h2>
@@ -64,7 +70,7 @@ const Blogpost01 = () => {
                 Version control is a critical part of any modern development workflow, and Git is the industry-standard
                 tool for managing code changes. GitHub, a platform built around Git, allows developers to collaborate on
                 projects, host repositories, and manage version control remotely. Understanding Git and GitHub is
-                essential for any developer, whether you’re working solo or as part of a team.
+                essential for any developer, whether youre working solo or as part of a team.
               </p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">3. Figma</h2>
               <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
@@ -93,7 +99,7 @@ const Blogpost01 = () => {
                 Tailwind CSS has transformed the way web developers design responsive, mobile-first websites. This
                 utility-first CSS framework makes it easy to create custom designs with minimal effort. Instead of
                 writing custom CSS rules, developers can use predefined utility classes to quickly build components and
-                layouts. In 2024, it’s widely regarded as one of the best CSS frameworks for rapid development.
+                layouts. In 2024, its widely regarded as one of the best CSS frameworks for rapid development.
               </p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">7. React.js</h2>
               <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
@@ -105,7 +111,7 @@ const Blogpost01 = () => {
               </p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">8. Chrome DevTools</h2>
               <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
-                Google Chrome's built-in developer tools are invaluable for debugging and optimizing websites. Chrome
+                Google Chromes built-in developer tools are invaluable for debugging and optimizing websites. Chrome
                 DevTools provide a suite of features, including performance profiling, network monitoring, and code
                 inspection. By using these tools, developers can diagnose issues directly in the browser, helping to
                 speed up the development and troubleshooting process.
@@ -126,10 +132,10 @@ const Blogpost01 = () => {
               </p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">Conclusion</h2>
               <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
-                In 2024, these 10 tools should be part of every web developer's toolkit. From code editors like VS Code
+                In 2024, these 10 tools should be part of every web developers toolkit. From code editors like VS Code
                 to essential technologies like Node.js and Docker, these tools streamline the development process and
-                help developers create better, more efficient web applications. Whether you're a beginner or an
-                experienced developer, mastering these tools will ensure you're prepared for the ever-changing world of
+                help developers create better, more efficient web applications. Whether youre a beginner or an
+                experienced developer, mastering these tools will ensure youre prepared for the ever-changing world of
                 web development. Stay updated with these tools, explore new features, and embrace the ones that work
                 best for your workflow. With the right tools at your disposal, you can enhance your productivity,
                 streamline your coding practices, and continue to deliver outstanding web experiences in 2024 and

@@ -1,13 +1,15 @@
+import Image from "next/image";
+
 const CTA = () => {
   return (
     <>
       <section className="relative w-full h-[20rem] overflow-hidden mt-10 ">
-        <img
+        <Image
           src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExanA1cXg4M3M0cWxpbmEyd3JzbzNld2owemxod3l5M21wNDExZmt5bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9ZsHm0z5QwSYpV7g01/giphy.webp"
           alt="Background GIF"
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          fill
+          className="absolute top-0 left-0 object-cover"
         />
-
         <div className="relative z-10 flex items-center justify-center h-full text-center lg:text-left">
           <div className="lg:w-3/6  ">
             <div>
@@ -15,8 +17,8 @@ const CTA = () => {
                 Ready to Take Your Online Presence to the Next Level?
               </h1>
               <h3 className="font-Inter font-light text-lg text-mainwhite text-center lg:text-left mt-3">
-                Let’s build something amazing together. Whether you need a stunning website, a powerful application, or
-                innovative solutions, I’m here to make it happen!
+                Lets build something amazing together. Whether you need a stunning website, a powerful application, or
+                innovative solutions, Im here to make it happen!
               </h3>
             </div>
             <div className="mt-5">

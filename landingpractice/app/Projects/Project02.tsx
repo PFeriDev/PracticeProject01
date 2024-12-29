@@ -5,6 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const Project02 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,25 +40,28 @@ const Project02 = () => {
                   className="lg:ml-5 shadow-xl border-2 border-maingreen rounded-xl border-opacity-15 shadow-maingreen/30">
                   <CarouselContent className="flex">
                     <CarouselItem className="w-full flex justify-center items-center">
-                      <img
+                      <Image
                         src="https://images.unsplash.com/photo-1644924735973-0ba06d83268e?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="projectpic"
                         className="w-96 h-96 object-cover rounded-xl"
-                      />
+                        width={500}
+                        height={500}></Image>
                     </CarouselItem>
                     <CarouselItem className="w-full flex justify-center items-center">
-                      <img
+                      <Image
                         src="https://images.unsplash.com/photo-1643941687361-7101751cf89c?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="projectpic"
                         className="w-96 h-96 object-cover rounded-xl"
-                      />
+                        width={500}
+                        height={500}></Image>
                     </CarouselItem>
                     <CarouselItem className="w-full flex justify-center items-center">
-                      <img
+                      <Image
                         src="https://images.unsplash.com/photo-1661268277249-38f133ba09c9?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="projectpic"
                         className="w-96 h-96 object-cover rounded-xl"
-                      />
+                        width={500}
+                        height={500}></Image>
                     </CarouselItem>
                   </CarouselContent>
                   <CarouselPrevious className="bg-transparent text-2xl w-10 h-10 text-maingreen border-maingreen duration-300" />
@@ -135,17 +139,19 @@ const Project02 = () => {
               <h1 className="text-mainwhite font-Poppins font-black text-2xl mb-5 uppercase ">
                 Pictures from the project
               </h1>
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1536724609414-5f000e9a2745?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="mockup1"
                 className="w-full h-[50rem] object-cover rounded-xl"
-              />
+                width={500}
+                height={500}></Image>
               <p className="font-Inter font-normal text-maingraytext text-lg text-center mb-5">Picture description</p>
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?q=80&w=2101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="mockup1"
                 className="w-full h-[50rem] object-cover rounded-xl"
-              />
+                width={500}
+                height={500}></Image>
               <p className="font-Inter font-normal text-maingraytext text-lg text-center">Picture description</p>
             </div>
             <div className="mt-10">
