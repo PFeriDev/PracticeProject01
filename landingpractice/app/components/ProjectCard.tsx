@@ -17,7 +17,7 @@ const ProjectCard: NextPage<ProjectCardProps> = ({ Coverpic, AltTitle, Title, on
       onClick={onClick}
       className="cursor-pointer rounded-lg shadow-maingreen/30 shadow-xl border-2 border-maingreen border-opacity-20 hover:scale-105 transition-all">
       <img src={Coverpic} alt="developer" width={400} />
-      <h1 className="font-Inter font-normal text-lg p-0.5 text-center text-maingreen mt-5 mb-2">
+      <h1 className="font-Inter font-normal text-sm p-0.5 text-center text-maingreen mt-5 mb-2">
         <span className="text-maingraytext">Task:</span> {AltTitle}
       </h1>
       <p className="font-Poppins font-black text-2xl text-mainwhite text-center">{truncate(Title, 100)}</p>

@@ -18,10 +18,10 @@ const Project02 = () => {
         {/* Blog Card */}
         <ProjectCard
           Coverpic={
-            "https://images.unsplash.com/photo-1695654397056-9de11d81d282?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
-          AltTitle={"Development"}
-          Title={"Online Food Delivery webapp."}
+          AltTitle={"Learning Management System (LMS) Development"}
+          Title={"EduTrack"}
           onClick={openModal}
         />
 
@@ -65,19 +65,19 @@ const Project02 = () => {
                 </Carousel>
               </div>
               <div className="lg:w-3/5 text-mainwhite lg:ml-[70px]">
-                <h1 className="font-Poppins font-black text-3xl mb-1">NFT Dashboard Application Development.</h1>
+                <h1 className="font-Poppins font-black text-3xl mb-1">EduTrack</h1>
                 <p className="font-Inter font-normal text-maingraytext text-lg mb-5">
-                  Through a wide variety of mobile applications, we have developed a unique visual system.
+                  Revolutionizing Student Success with Data-Driven Insights
                 </p>
                 <ul className="grid grid-cols-2 gap-4 font-Inter font-normal text-sm">
                   <li>
-                    <b>Client:</b> George Wallace
+                    <b>Client:</b> LearnSmart Institute
                   </li>
                   <li>
-                    <b>Date:</b> 15 June 2022
+                    <b>Date:</b> 20 Sept 2024
                   </li>
                   <li>
-                    <b>Service:</b> Web Application
+                    <b>Service:</b> Learning Management System (LMS) Development
                   </li>
                   <li>
                     <b>Difficulity:</b> Medium
@@ -101,28 +101,32 @@ const Project02 = () => {
             <hr className="border-maingraytext mt-10 hidden lg:block" />
             <div>
               <p className=" mt-10 mb-10 font-Inter font-normal text-maingraytext text-lg">
-                There are always some stocks, which illusively scale lofty heights in a given time period. However, the
-                good show doesn't last for these overblown toxic stocks as their current price is not justified by their
-                fundamental strength.
+                EduTrack is a state-of-the-art platform designed to enhance student performance through personalized
+                learning insights. By merging AI technology with user-friendly analytics, EduTrack empowers educators
+                and students to track progress, set goals, and achieve academic excellence.
               </p>
               <div className="lg:flex justify-between text-mainwhite grid gap-5">
                 <div>
                   <h1 className="font-Poppins font-black text-xl mb-2 uppercase">Strategy</h1>
                   <p className="font-Inter font-normal text-maingraytext text-lg">
-                    A strategy is a general plan to achieve one or more long-term. labore et dolore magna aliqua.
+                    The key focus was to develop a modular LMS that adapts to different learning styles. The platform
+                    integrates interactive dashboards, AI-driven performance analysis, and collaborative tools to
+                    support modern education.
                   </p>
                 </div>
                 <div>
                   <h1 className="font-Poppins font-black text-xl mb-2 uppercase">Chellenges</h1>
                   <p className="font-Inter font-normal text-maingraytext text-lg">
-                    UI/UX Design, Art Direction, A design is a plan or specification for art. which illusively scale
-                    lofty heights.
+                    Ensuring the platform handled large datasets while maintaining quick response times was a
+                    significant challenge. Additionally, we needed to balance the privacy concerns of users with the
+                    data-driven functionality of the system.
                   </p>
                 </div>
                 <div>
                   <h1 className="font-Poppins font-black text-xl mb-2 uppercase">Focus</h1>
                   <p className="font-Inter font-normal text-maingraytext text-lg">
-                    User experience (UX) design is the process design teams use to create products that provide.
+                    Accessibility and inclusivity drove the design process, ensuring students with different abilities
+                    could benefit equally from the platform’s features.
                   </p>
                 </div>
               </div>
@@ -146,18 +150,17 @@ const Project02 = () => {
             </div>
             <div className="mt-10">
               <p className="font-Inter font-normal text-maingraytext text-lg">
-                However, if you can precisely spot such toxic stocks, you may gain by resorting to an investing strategy
-                called short selling. This strategy allows one to sell a stock first and then buy it when the price
-                falls. <br /> <br /> While short selling excels in bear markets, it typically loses money in bull
-                markets. So, just like identifying stocks with growth potential, pinpointing toxic stocks and offloading
-                them at the right time is crucial to guard one's portfolio from big losses or make profits by short
-                selling them. <br />
-                <br /> Heska Corporation HSKA, Tandem Diabetes Care, Inc. TNDM, Credit Suisse Group CS,Zalando SE ZLNDY
-                and Las Vegas Sands LVS are a few such toxic stocks.Screening Criteria Here is a winning strategy that
-                will help you to identify overhyped toxic stocks: Most recent Debt/Equity Ratio greater than the median
-                industry average: High debt/equity ratio implies high leverage. <br />
-                <br /> High leverage indicates a huge level of repayment that the company has to make in connection with
-                the debt amount.
+                Details: <br />
+                <br />
+                EduTrack was built with scalability in mind, using a microservices architecture. The platform offers
+                integration with existing school systems, making it easy for institutions to adopt. Teachers can upload
+                materials, create quizzes, and track student performance in real time. A standout feature is the AI
+                assistant, which provides actionable insights for improving student outcomes. <br />
+                <br />
+                For example, it identifies areas where students struggle and suggests tailored resources. The system
+                also features gamification elements to encourage student engagement, such as badges and leaderboards.
+                Post-launch feedback was overwhelmingly positive, with educators praising its intuitive design and
+                robust analytics.
               </p>
             </div>
             <div className="mt-10 flex justify-center ">
