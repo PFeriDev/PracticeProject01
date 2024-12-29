@@ -1,2 +1,2 @@
-# PracticeProjekt01
+# PracticeProject01
 Practice Landing Page
