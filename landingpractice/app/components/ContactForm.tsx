@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import { MailCheck, Smartphone } from "lucide-react";
+import { sendEmail } from "../../lib/resend"; // A helyes importálás a resend.ts fájlhoz
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -19,23 +20,36 @@ const ContactSection: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
-    // Itt kellene megvalósítani az űrlap adatainak feldolgozását (pl. email küldés)
+
+    const result = await sendEmail(formData); // Az adatokat a resend.ts email küldő funkciójának adjuk át
+
+    if (result.success) {
+      console.log("Email sent successfully!");
+      // A form adatainak kiürítése
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } else {
+      console.error(result.message || "Failed to send email.");
+    }
+    alert("Thank you for your message!");
   };
 
   return (
-    <section className="w-full lg:h-[40rem]  bg-mainblack lg:flex grid grid-cols-1 gap-y-5 my-auto items-center justify-center">
+    <section className="w-full lg:h-[40rem] bg-mainblack lg:flex grid grid-cols-1 gap-y-5 my-auto items-center justify-center">
       <div className="h-full lg:w-1/3 items-center justify-center align-middle lg:flex text-mainwhite ">
         <div className="p-1 text-center lg:text-left">
           <h3 className="font-Poppins font-black text-3xl uppercase mb-3">
             Have a question? <br /> Feel free to ask!
           </h3>
           <p className="font-Inter font-normal text-sm text-maingraytext mb-5">
-            Lorem ipsum dolor sit amet consectetur. At lorem consequat eget eget. Vestibulum est vitae vitae etiam
-            vitae. Lorem ipsum dolor sit amet consectetur. At lorem consequat eget eget. Vestibulum est vitae vitae
-            etiam vitae.
+            Don't hesitate to reach out! Whether you're curious about my work, services, or anything else, I'm here to
+            assist. Let's connect and discuss how I can assist you with your project needs.
           </p>
           <ul>
             <li>
@@ -53,8 +67,8 @@ const ContactSection: React.FC = () => {
           </ul>
         </div>
       </div>
-      <div className="lg:h-4/5 max-w-[30rem] m-5 border-2 border-maingreen/30 mb-5 bg-mainblack shadow-2xl shadow-maingreen/30 p-10 rounded-xl flex font-Inter font-light  lg:justify-center align-middle items-center text-maingraytext">
-        <form action="">
+      <div className="lg:h-4/5 max-w-[30rem] m-5 border-2 border-maingreen/30 mb-5 bg-mainblack shadow-2xl shadow-maingreen/30 p-10 rounded-xl flex font-Inter font-light lg:justify-center align-middle items-center text-maingraytext">
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             id="name"

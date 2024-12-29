@@ -52,10 +52,24 @@ const about = () => {
 
               <hr className="border-maingraytext w-[4rem]" />
               <div className="flex gap-4">
-                <Facebook size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
-                <Instagram size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
-                <Twitter size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
-                <Linkedin size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
+                <a
+                  href="https://www.facebook.com/profile.php?id=100090204220416"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <Facebook size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
+                </a>
+                <a href="https://www.instagram.com/ferencpemmer/" target="_blank" rel="noopener noreferrer">
+                  <Instagram size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <Twitter size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ferenc-pemmer-1bb20a207/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <Linkedin size={20} className="hover:text-maingreen hover:scale-150 transition-all cursor-pointer" />
+                </a>
               </div>
             </div>
           </div>

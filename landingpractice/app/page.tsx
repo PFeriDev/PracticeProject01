@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import { motion } from "framer-motion";
+import Faq from "./components/HomePageSections/Faq";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -78,6 +79,13 @@ export default function Home() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 1.1 }}>
             <ProjectSection />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1.1 }}>
+            <Faq />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}

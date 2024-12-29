@@ -16,11 +16,11 @@ const Blogpost01 = () => {
         {/* Blog Card */}
         <BlogPostCard
           Coverpic={
-            "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            "https://media.istockphoto.com/id/1249324925/hu/fot%C3%B3/%C3%BAj-%C3%B6tletek-%C3%A9s-k%C3%A9pzelet-kreativit%C3%A1s-%C3%A9s-inspir%C3%A1ci%C3%B3-technol%C3%B3giai-innov%C3%A1ci%C3%B3.jpg?s=1024x1024&w=is&k=20&c=uYPus5eeG8jmQuOo4F21ZaW9z73EVbZhWRKJJ4mJBLg="
           }
           Title={"From Idea to Website: A Beginner's Guide to Web Development"}
           Description={
-            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered  alteration in some form, by injected humour, or randomised words which don’t look even slightly   believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn’t anything    embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks."
+            "Turning your idea into a fully functioning website can seem overwhelming, especially if you’re new to web development. However, with the right approach and tools, anyone can learn how to build a website from scratch. This guide will take you through the key steps of the web development process, so you can start creating your own projects today."
           }
           onClick={openModal}
         />
@@ -36,51 +36,75 @@ const Blogpost01 = () => {
                   From Idea to Website: A Beginner's Guide to Web Development
                 </h1>
                 <p className="font-Inter font-normal text-lg text-maingraytext mt-2 mb-2">
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                  alteration in some form, by injected humour, or randomised words which don’t look even slightly
-                  believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn’t anything
-                  embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
-                  toitrrepeat predefined chunks.
+                  Turning your idea into a fully functioning website can seem overwhelming, especially if you’re new to
+                  web development. However, with the right approach and tools, anyone can learn how to build a website
+                  from scratch. This guide will take you through the key steps of the web development process, so you
+                  can start creating your own projects today.
                 </p>
               </div>
 
               <img
-                src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://media.istockphoto.com/id/1249324925/hu/fot%C3%B3/%C3%BAj-%C3%B6tletek-%C3%A9s-k%C3%A9pzelet-kreativit%C3%A1s-%C3%A9s-inspir%C3%A1ci%C3%B3-technol%C3%B3giai-innov%C3%A1ci%C3%B3.jpg?s=1024x1024&w=is&k=20&c=uYPus5eeG8jmQuOo4F21ZaW9z73EVbZhWRKJJ4mJBLg="
                 alt="webdeveloper"
                 className="rounded-xl"
               />
               <p></p>
               <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">
-                First, solve the problem. Then write the code.
+                1. Planning and Research
               </h2>
               <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don’t look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn’t anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
-                toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet. It re
-                are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                some form, by injectedeed eedhumour, or randomised words which don’t look even slightly believable.
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don’t look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum. <br /> <br /> You need to be sure there
-                isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet. It
-                re are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                in some form, by injectedeed eedhumour, or randomised words which don’t look even slightly believable.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo . <br /> <br />
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don’t look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn’t anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
-                toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet. It re
-                are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-                some form, by injectedeed eedhumour, or randomised words which don’t look even slightly believable.
-                Necessary, making this the first true generator on the Internet. <br />
-                <br /> It re are many variations of passages of Lo rem Ipsum available, but the majority have suffered
-                alteration in some form, by injectedeed eedhumour, or randomised words which don’t look even slightly
-                believable.
+                The first step in web development is understanding what you want your website to do. Are you building a
+                personal portfolio, a blog, or an e-commerce site? Take time to research similar websites, jot down
+                ideas, and map out the user experience. Planning helps ensure your website will be both functional and
+                user-friendly.
+              </p>
+              <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">
+                2. Choosing the Right Tools
+              </h2>
+              <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
+                Once you have a plan, you’ll need the right tools to bring your idea to life. At the core of web
+                development are three main technologies: HTML: The structure of your website. CSS: The styling to make
+                your website look good. JavaScript: Adds interactivity and dynamic features. In addition, you might want
+                to use a code editor like VS Code to write your code and a version control system like Git to track
+                changes.
+              </p>
+              <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">
+                3. Building the Structure
+              </h2>
+              <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
+                Start by creating the basic structure of your website using HTML. Think of this like the skeleton of
+                your site. Define the layout, navigation, and the different sections of your website.
+              </p>
+              <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">4. Styling with CSS</h2>
+              <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
+                After laying out your website’s structure, use CSS to style it. Adjust fonts, colors, and spacing to
+                make your site visually appealing. If you’re new to CSS, you can use frameworks like Bootstrap or
+                Tailwind CSS to speed up the design process.
+              </p>
+              <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">
+                5. Making It Interactive with JavaScript
+              </h2>
+              <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
+                JavaScript is what makes your website come to life. You can use it to add interactive elements like
+                buttons, forms, and dynamic content. If you're building something more advanced, consider learning
+                frameworks like React to build interactive user interfaces.
+              </p>
+              <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">
+                6. Testing and Launching
+              </h2>
+              <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
+                Once your website is built, it's time to test it. Make sure everything works across different devices
+                and browsers. Tools like Chrome DevTools can help identify any issues. Once you’re satisfied with the
+                site’s performance, it’s time to deploy it. Platforms like Netlify or GitHub Pages allow you to host
+                your website for free.
+              </p>
+              <h2 className="font-Poppins font-extrabold text-2xl text-mainwhite mb-5 mt-5">Conclusion</h2>
+              <p className="font-Inter font-normal text-lg text-maingraytext mt-2 leading-relaxed">
+                Building a website from scratch can be a rewarding experience, and with the right tools and mindset,
+                it’s something anyone can learn. Start with planning your site, then learn the essential web development
+                technologies like HTML, CSS, and JavaScript. As you build your site, remember to test it and make sure
+                it’s functional across different devices. With practice, you’ll be able to turn any idea into a fully
+                working website.
               </p>
               <div className="flex justify-center mt-5 pb-10">
                 <Button title1={"Close"} title2={"Close"} onClick={closeModal} />

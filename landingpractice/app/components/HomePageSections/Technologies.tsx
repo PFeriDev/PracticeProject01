@@ -50,7 +50,7 @@ const Technologies = () => {
           </div>
         </div>
         <p className="font-Inter font-light text-lg text-maingraytext text-center mt-3">
-          And i want to learn much more...
+          I look forward to learning even more and advancing my expertise...
         </p>
       </section>
     </>
